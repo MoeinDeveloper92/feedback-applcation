@@ -41,6 +41,7 @@ header {
   position: relative;
 }
 
+/* Any class of card that has class of reverse */
 .card.reverse {
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
