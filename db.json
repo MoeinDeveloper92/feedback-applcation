@@ -1,0 +1,24 @@
+{
+  "feedback": [
+    {
+      "id": 1,
+      "rating": 10,
+      "text": "This is text number one from the server"
+    },
+    {
+      "id": 2,
+      "rating": 9,
+      "text": "This is text number two from the server"
+    },
+    {
+      "id": 3,
+      "rating": 8,
+      "text": "This is text number three from the server"
+    },
+    {
+      "text": "I have edited that.... and geting thatm what is worng, maybe it is working",
+      "rating": 7,
+      "id": 9
+    }
+  ]
+}
