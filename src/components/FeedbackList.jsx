@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import FeedbackContext from '../context/FeedbackContext';
 import FeedbackItem from './FeedbackItem';
-import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 
-const FeedbackList = ({ feedback, handleDelete }) => {
+const FeedbackList = () => {
+    const { feedback } = useContext(FeedbackContext)
+
     if (!feedback || feedback.length === 0) return <p>No Feedback Yet</p>;
 
     return (
@@ -18,16 +20,12 @@ const FeedbackList = ({ feedback, handleDelete }) => {
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <FeedbackItem item={item} handleDelete={handleDelete} />
+                        <FeedbackItem item={item} />
                     </motion.div>
                 ))}
             </div>
         </div>
     );
-};
-
-FeedbackList.propTypes = {
-    feedback: PropTypes.array.isRequired,
 };
 
 export default FeedbackList;
